@@ -11,4 +11,13 @@ a{
 }
 a:hover{
     font-size: 120%;
+    color:lightblue;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+a:visited {
+    color: none;
 }

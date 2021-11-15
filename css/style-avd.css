@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+@media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+    --box-size: 200px;
+    
+      /* Only change code above this line */
+    }
+  }
+
+:root{
+    width: 100%;
+    height: 100%;
+    --box-size: 280px;
+    --box-heght: 380px;
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+    --color-6: #ff00ff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  animation: backdiv 5s infinite;
+  text-align: center;
+}
+
+#header {
+  height: 80px;
+}
+
+#header h1 {
+    /* text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif; /* Mochiy Pop P One font imported in css */
+    /* margin: 0%;
+    padding: 0%;
+     */
+     display: inline-flex;
+     font-size: 35px;
+     line-height: 0;
+     padding: 20px;
+     margin: 0.5%;
+     font-family: 'Mochiy Pop P One', sans-serif;
+     text-transform: uppercase;
+     background: radial-gradient(
+       circle farthest-corner at center center,
+       var(--color-1),
+       var(--color-2),
+       var(--color-3),
+       var(--color-4),
+       var(--color-5)
+     ) no-repeat;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    }
+
+#header h2 {
+    text-align: center;
+    font-family: "Praise", sans-serif; /* Praise font linked in html*/
+    margin: -0.5%;
+    padding: 0%;
+    color: var(--color-3)
+}
+
+#header hr {
+    border: none;
+    border-top: 4px ridge #f1f1ec;
+    color: #f1f3f3;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+    padding: 0.15%;
+    margin: 0%;
+}
+
+#container {
+    width: 100%;
+    margin-left: 2%;
+    min-height: calc(100vh - 140px);
+    /* 90px header + 60px footer = 140px  */
+    max-height: calc(100vh - 140px);
+}
+
+#footer {
+    bottom: 0%;
+    position: sticky;
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 1vh;
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#link {
+    display: inline-flex;
+     font-size: 15px;
+     line-height: 0;
+     padding: 10px;
+     margin: 0.5%;
+     font-family: 'Mochiy Pop P One', sans-serif;
+     text-transform: uppercase;
+     background: radial-gradient(
+       circle farthest-corner at center center,
+       var(--color-6),
+       var(--color-5),
+       var(--color-4),
+       var(--color-3),
+       var(--color-2),
+       var(--color-1)
+     ) no-repeat;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+#link a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+#hr1 {
+    border: none;
+    border-top: 0.8vh double #4ff0f0;
+    color: #4ff0f0;
+    overflow: visible;
+    text-align: center;
+    height: 1vh;
+    padding: 0.15%;
+    margin: 0%;
+}
+
+#hr1::after {
+    color: rgb(241, 166, 190);
+    background: linear-gradient(to right, #348AC7, #7474BF);;
+    content: "❤";
+    padding: 0 1vh;
+    position: relative;
+    top: -2.4vh;
+}
+
+#hr2 {
+    border: none;
+    border-top: 0.8vh dotted #cb66fa;
+    color: #cb66fa;
+    overflow: visible;
+    text-align: center;
+    height: 1vh;
+    padding: 0.15%;
+    margin: 0%;
+}
+
+#hr2::after {
+    color: rgb(80, 77, 78);
+    background: linear-gradient(to right, #348AC7, #7474BF);;
+    content: "\00a9" " 2021";
+    padding: 0 1vh;
+    position: relative;
+    top: -2.4vh;
+}
+
+.heart {
+    float: left;
+    position: relative;
+    margin: auto;
+    top: 170px;
+    right: 0;
+    bottom: 0;
+    left: 120px;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation: heart1 5s infinite;
+}
+
+.heart::after {
+  background-color: pink;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+
+.bounce1 {
+    float: left;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 35%;
+    background-color: pink;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    /* transform: rotate(-45deg); */
+    animation: bounce 2s infinite ease-out;
+}
+
+/* .heart1::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 80px;
+}
+.heart1::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 160px;
+} */
+
+.balls {
+    border-radius: 50%;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 60%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #red {
+    background: red;
+    left: 20%;
+    animation-timing-function: linear;
+  }
+  #blue {
+    background: blue;
+    left: 45%;
+    animation-timing-function: ease-out;
+  }
+  #green {
+    background: green;
+    left: 70%;
+    animation-timing-function: ease-in, cubic-bezier(0.311, 0.441, 0.444, 1.649);
+  }
+
+  .stars {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+
+  .star-1 {
+    margin-top: 20%;
+    margin-left: 20%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    margin-top: 20%;
+    margin-left: 60%;
+    animation-duration: 1s;
+    animation-name: twinkle2;
+  }
+
+  .star-3 {
+    margin-top: 40%;
+    margin-left: 50%;
+    animation-duration: 1s;
+    animation-name: twinkle3;
+  }
+
+  .box {
+    width: var(--box-size);
+    height: var(--box-heght);
+    border: (5px solid blanchedalmond);
+    border-radius: 2%;
+    margin: 10px 12px 10px 12px;
+    position: relative;
+    float: left;
+    box-shadow: -2px -2px 2px 2px rgb(228, 225, 225), 2px 2px 2px 2px rgb(228, 225, 225);
+    display: inline-block;
+  }
+
+  .box:hover {
+      transform: scale(1.04);
+      box-shadow: 2px 2px 5px 5px rgb(220, 233, 195), -2px -2px 5px 5px rgb(220, 233, 195);
+  }
+
+  
+
+
+/* animation */
+
+@keyframes backdiv {
+    0% {
+        background: #7474BF;
+    }
+    20% {
+        background: #348AC7;
+    }
+    40% {
+        background: #EC6F66;
+    }
+    60% {
+        background: #F3A183;
+    }
+    80% {
+        background: #49a09d;
+    }
+    100% {
+        background: #5f2c82;
+    }   
+}
+
+@keyframes heart1 {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(0.6) rotate(-45deg);
+    }
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }    
+}
+
+@keyframes bounce {
+    50% {
+        top: 300px;
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@keyframes jump {
+    50% {
+      top: 10%;
+    }
+  }
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+    @keyframes twinkle2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+    @keyframes twinkle3 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
