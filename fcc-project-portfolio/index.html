@@ -7,46 +7,96 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
     <title>Jay Prakash | Portfolio</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="nav">
         <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#projects">Work</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+          <li>
+            <a href="#welcome-section" >About</a>
+          </li>
+          <li>
+            <a href="#projects">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-    </nav>
-    <section id="welcome-section">
+      </nav>
+      <section id="welcome-section" class="welcome-section">
         <h1>Hey I am Jay Prakash</h1>
         <p>a web developer</p>
-    </section>
-    <section id="projects">
-        <h2></h2>
-        <div class="project-tile">
-            <a href="https://jaysingh9518.github.io/">
-                <img src="https://drive.google.com/file/d/11zjU4JUjsTBZJ648K1WMdARrREolGznh/view?usp=sharing" alt="Website">
-                <p>My Website</p>
-            </a>
+      </section>
+      <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="projects-grid">
+          <a href="https://jaysingh9518.github.io/" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://jaysingh9518.github.io/100daysofcode/fcc-project-portfolio/website.jpg" alt="Website">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              My Website
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a href="https://jaysingh9518.github.io/100daysofcode/oops-error/index.html" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://jaysingh9518.github.io/100daysofcode/fcc-project-portfolio/oops-error.jpg" alt="Oops Error Page">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Oops Error Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a href="#" target="_blank" class="project project-tile">
+            <img class="project-image" src="https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=20&m=1181378326&s=612x612&w=0&h=FUstjwTm6ZOYSHkusiHSsPHUV7kSGDnmRF18QDy-AO8=" alt="coming soon">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Coming soon
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
         </div>
-        <div class="project-tile">
-            <a href="">
-                <img src="https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=20&m=1181378326&s=612x612&w=0&h=FUstjwTm6ZOYSHkusiHSsPHUV7kSGDnmRF18QDy-AO8=" alt="coming soon">
-                <p>Coming Soon</p>
-            </a>
+        <a href="https://codepen.io/jaysingh9518/" class="btn btn-show-all" target="_blank">Show all Codepen Projects<i class="fas fa-chevron-right"></i></a>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+          <p>How do you take your coffee?</p>
         </div>
-        <div class="project-tile">c</div>
-        <div class="project-tile">c</div>
-    </section>
-    <section id="contact">
-        <h2></h2>
-
-    </section>
+        <div class="contact-links">
+          <a
+            href="https://facebook.com/jaysingh9518"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-facebook-square"></i> Facebook</a
+          >
+          <a
+            id="profile-link"
+            href="https://github.com/jaysingh9518"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://twitter.com/jaysingh9518"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a href="mailto:jaysingh9518@gmail.com" class="btn contact-details"
+            ><i class="fas fa-at"></i> Send a mail</a
+          >
+          <a href="tel:964-463-7585" class="btn contact-details"
+            ><i class="fas fa-mobile-alt"></i> Call me</a
+          >
+        </div>
+      </section>
+      <footer>
+        <p>
+          JAYSINGH9518 &copy; 2021
+        </p>
+      </footer>
 </body>
 </html>
